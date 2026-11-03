@@ -1,0 +1,9 @@
+# Direct dependencies
+gmssl==3.2.2
+cryptography==46.0.3
+pqcrypto==1.0.0
+
+# Transitive dependencies, pinned explicitly for reproducible installs
+pycryptodomex==3.24.1   # required by gmssl
+cffi==2.1.1             # required by cryptography (CPython >= 3.9)
+pycparser==3.11         # required by cffi
